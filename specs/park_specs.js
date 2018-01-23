@@ -17,11 +17,11 @@ describe('Park', function(){
   });
 
   it('park enclosure is empty', function(){
-    assert.strictEqual(park.enclosure.length, 0);
+    assert.strictEqual(park.countDinosaurs(), 0);
   });
 
   it('can add dinosaur to park enclosure', function(){
     park.addDino(dinosaur1);
-    assert.strictEqual(park.enclosure.length, 1);
+    assert.strictEqual(park.countDinosaurs(), 1);
   });
 });
