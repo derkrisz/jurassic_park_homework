@@ -18,4 +18,14 @@ Park.prototype.removeSameDinos = function(type) {
   }
 };
 
+Park.prototype.getDinosByOffspring = function(offspringNum) {
+  let sortedDinos = [];
+  for (dinosaur of this.enclosure) {
+    if (dinosaur.offspring > offspringNum) {
+      sortedDinos.push(dinosaur);
+    }
+  }
+  return sortedDinos;
+};
+
 module.exports = Park;

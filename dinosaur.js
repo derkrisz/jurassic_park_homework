@@ -1,6 +1,6 @@
 const Dinosaur = function(type, offspring) {
   this.type = type;
-  this.offpsring = offspring;
+  this.offspring = offspring;
 }
 
 module.exports = Dinosaur;

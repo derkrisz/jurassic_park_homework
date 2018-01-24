@@ -35,4 +35,12 @@ describe('Park', function(){
     park.removeSameDinos("Apatosaurus");
     assert.strictEqual(park.countDinosaurs(), 2);
   });
+
+  it('can get dinos with more than 2 offsprings', function(){
+    park.addDino(dinosaur1);
+    park.addDino(dinosaur2);
+    park.addDino(dinosaur3);
+    park.addDino(dinosaur4);
+    assert.strictEqual(park.getDinosByOffspring(2).length, 2);
+  });
 });

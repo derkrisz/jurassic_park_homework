@@ -14,6 +14,6 @@ describe('Dinosaur', function (){
   });
 
   it('dinosaur has offspring(s)', function(){
-    assert.strictEqual(dinosaur.offpsring, 2);
+    assert.strictEqual(dinosaur.offspring, 2);
   });
 });
